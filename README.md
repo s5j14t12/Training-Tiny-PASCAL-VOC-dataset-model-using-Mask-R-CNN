@@ -1,3 +1,19 @@
+# Training Tiny PASCAL VOC dataset model using Mask R-CNN
+
+This is a project to train a model with Tiny PASCAL VOC dataset which is include in dataset folder. Basically all the code is come from Mask R-CNN (link: https://github.com/matterport/Mask_RCNN#mask-r-cnn-for-object-detection-and-segmentation), you need 5 step to train and test model:
+1.Download and extract this project.
+2.Install dependencies and setup in the main project directory:	
+   ```bash
+   pip install -r requirements.txt
+   python setup.py install
+   ```
+3.put train/test images in train/test_images folder
+4.Train model:
+   ```bash
+   python hw3_train.py
+   ```
+5.Test the model in hw3.ipynb, remember to change WEIGHT_PATH to the model you just trained.
+
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
