@@ -2,12 +2,14 @@
 
 This is a project to train a model with Tiny PASCAL VOC dataset which is include in dataset folder. Basically all the code is come from Mask R-CNN (link: https://github.com/matterport/Mask_RCNN#mask-r-cnn-for-object-detection-and-segmentation), you need 5 step to train and test model:
 1.Download and extract this project.
+
 2.Install dependencies and setup in the main project directory:	
    ```bash
    pip install -r requirements.txt
    python setup.py install
    ```
 3.put train/test images in train/test_images folder
+
 4.Train model:
    ```bash
    python hw3_train.py
